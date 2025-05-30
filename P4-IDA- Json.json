@@ -1,0 +1,16 @@
+
+{
+  "table_entries": [
+    {
+      "table": "state_table",
+      "match": {
+        "hdr.ipv4.srcAddr": "10.0.0.1",
+        "hdr.ipv4.dstAddr": "10.0.0.2",
+        "hdr.tcp.srcPort": 1234,
+        "hdr.tcp.dstPort": 80
+      },
+      "action_name": "detect_anomaly",
+      "action_params": {}
+    }
+  ]
+}
